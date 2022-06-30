@@ -1,0 +1,60 @@
+.header{
+   margin-top: 0%;
+   margin-bottom: 0%; 
+   border-bottom: #85dcb8;
+   border-style: solid;
+}
+
+.total{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    margin-top: 0%;
+   margin-bottom: 0%;
+   color: antiquewhite;
+   font-family: 'Roboto', sans-serif;
+}
+
+.mainTitle, .subtitle{
+    font-family: 'Pacifico', cursive;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    color: #41b3a3;
+}
+
+.mainTitle{
+    font-size: 500%;
+}
+
+.total, .record, .header, .addTransaction{
+    background-color: #85dcb8;
+}
+
+form{
+    padding-left: 25%;
+    padding-right: 25%;
+    color: #41b3a3;
+}
+
+button{
+    width: 100%;
+    color: antiquewhite;
+   font-family: 'Roboto', sans-serif;
+    background-color: #85dcb8;
+}
+
+form{
+    background-color: #85dcb8;
+    width: 100%;
+}
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+
+
+
+
