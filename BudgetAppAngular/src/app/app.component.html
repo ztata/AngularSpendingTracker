@@ -8,12 +8,12 @@
   <h3>Currently Available Funds: {{totalFunds | currency}}</h3>
 </div>
 
-<div>
+<div class="buttonDiv">
   <button mat-button (click)="displayTransaction()">{{buttonText}}</button>
 </div>
 
 
-<div *ngIf="displayTransactionPanel">
+<div *ngIf="displayTransactionPanel" class="formDiv">
 <form [formGroup]="transactionForm" (ngSubmit)="addTransaction()" class="form-inline">
   <mat-form-field appearance="standard">
     <mat-label>Name</mat-label>
@@ -23,7 +23,7 @@
     <mat-label>Amount</mat-label>
     <input type="number" placeholder="Enter Transaction Value" class="form-control" matInput formControlName="amount">
   </mat-form-field>
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="standard">
     <mat-label>Type</mat-label>
     <mat-select class="form-control" matInput formControlName="type">
       <mat-option *ngFor="let transaction of transactions" value={{transaction.id}}>{{transaction.name}}</mat-option>
@@ -36,12 +36,17 @@
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
-  <button type="submit" class="btn btn-primary" [disabled]="!transactionForm.valid">Submit</button>
+  <button type="submit" class="btn btn-primary submitButton" [disabled]="!transactionForm.valid">Submit</button>
 </form>
 </div>
 
-<div class="record">
-  <h3>Transaction Record</h3>
+
+<div *ngIf="transactionRecord[0] == null" class="emptyTableMessage">
+  <h3>Enter a Transaction to Get Started!</h3>
+</div>
+
+<div class="record" *ngIf="transactionRecord[0] != null">
+  <h3 class="tableLabel">Transaction Record</h3>
   <table class="table table-hover">
     <thead>
       <th>Name</th>

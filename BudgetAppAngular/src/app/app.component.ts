@@ -46,8 +46,6 @@ transactionForm = new FormGroup({
     this.transactionForm.reset();
   }
 
-  //SEE IF I CAN ADD CONDITIONAL STYLING SO IT CHANGES COLOR BASED ON IF IT WAS INCOME OR EXPENSE 
-  //update the font on everything 
   updateTransactionRecord(){
     this.currentTransaction = {
       name: this.transactionForm.value.name,

@@ -1,60 +1,105 @@
-.header{
-   margin-top: 0%;
-   margin-bottom: 0%; 
-   border-bottom: #85dcb8;
-   border-style: solid;
+.total {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+  color: #24305e;
+  font-family: 'Roboto', sans-serif;
 }
 
-.total{
-    padding-top: 3%;
-    padding-bottom: 3%;
-    text-align: center;
-    margin-top: 0%;
-   margin-bottom: 0%;
-   color: antiquewhite;
-   font-family: 'Roboto', sans-serif;
+.mainTitle,
+.subtitle {
+  font-family: 'Pacifico', cursive;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+
 }
 
-.mainTitle, .subtitle{
-    font-family: 'Pacifico', cursive;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    text-align: center;
-    color: #41b3a3;
+.mainTitle {
+  font-size: 500%;
+  color: #24305e;
 }
 
-.mainTitle{
-    font-size: 500%;
+.subtitle {
+  color: #f76c6c;
 }
 
-.total, .record, .header, .addTransaction{
-    background-color: #85dcb8;
+.total,
+.record,
+.header,
+.addTransaction {
+  /* background-color: #A8d0E6; */
+  background-color: white;
 }
 
-form{
-    padding-left: 25%;
-    padding-right: 25%;
-    color: #41b3a3;
+.record{
+  margin-bottom: 2.5%;
 }
 
-button{
-    width: 100%;
-    color: antiquewhite;
-   font-family: 'Roboto', sans-serif;
-    background-color: #85dcb8;
+form {
+  margin-left: 40%;
+  margin-right: 40%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  color: #24305e;
+  padding-left: 5%;
+  padding-right: 5%; 
+  padding-bottom: 1%;
+   background-color: #f76c6c; 
+  
+  border: 2px solid #24305e;
+  border-radius: 10%;
+  /* width: 100%; */
 }
 
-form{
-    background-color: #85dcb8;
-    width: 100%;
+.formDiv{
+  /* background-color: #A8d0E6; */
+  background-color: white;
+  
 }
-.form-inline {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-  }
+
+button {
+  align-items: center;
+  width: 100%;
+  color: #24305e;
+  font-family: 'Roboto', sans-serif;
+  /* background-color: #A8d0E6; */
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.submitButton {
+  background-color: #A8d0E6;
+  margin-left: 2.5% !important;
+}
 
 
 
+table {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #24305e;
 
+}
 
+/*  mat-form-field {
+  padding-left: 5%;
+}  */
+
+/* .buttonDiv {
+  color: #24305e;
+} */
+
+.tableLabel {
+  text-align: center !important;
+  color: #24305e;
+  padding-top: 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.emptyTableMessage{
+  text-align: center;
+  color: #24305e;
+  margin-top: 5%;
+}
