@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "BudgetAppAngular"
+  "defaultProject": "BudgetAppAngular",
+  "cli": {
+    "analytics": false
+  }
 }
