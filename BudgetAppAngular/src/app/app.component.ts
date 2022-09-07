@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Form, FormBuilder, FormControl, FormGroup, NgForm, Validators} from '@angular/forms';
+import { Form, FormBuilder, UntypedFormControl, UntypedFormGroup, NgForm, Validators} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ITransaction } from './Interfaces/ITransaction';
 
@@ -25,11 +25,11 @@ export class AppComponent {
   ]
 
 
-transactionForm = new FormGroup({
-  name: new FormControl('', [Validators.required]),
-  type: new FormControl(''),
-  amount: new FormControl('', [Validators.required]),
-  date: new FormControl('')
+transactionForm = new UntypedFormGroup({
+  name: new UntypedFormControl('', [Validators.required]),
+  type: new UntypedFormControl(''),
+  amount: new UntypedFormControl('', [Validators.required]),
+  date: new UntypedFormControl('')
 })
 
   addTransaction(){
